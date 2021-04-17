@@ -22,7 +22,7 @@ export const Router: VFC = memo(() => {
                 exact={route.exact}
                 path={`${url}${route.path}`}
               >
-                <HeaderLayout>{route.Children}</HeaderLayout>
+                <HeaderLayout Children={route.Children}></HeaderLayout>
               </Route>
             ))}
           </Switch>
