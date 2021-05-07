@@ -2,7 +2,7 @@
 import { useCallback, useState } from "react";
 import axios from "axios";
 
-import { User } from "../components/types/api/user";
+import { User } from "../types/api/user";
 import { useMessage } from "./useMessage";
 
 export const useAllUsers = () => {

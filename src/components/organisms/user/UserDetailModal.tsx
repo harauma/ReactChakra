@@ -12,7 +12,7 @@ import {
   Stack
 } from "@chakra-ui/react";
 
-import { User } from "../../types/api/user";
+import { User } from "../../../types/api/user";
 
 type Props = {
   user: User | null;
