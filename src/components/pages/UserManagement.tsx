@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { memo, useCallback, useEffect, VFC } from "react";
 import {
   Center,
@@ -49,7 +48,6 @@ export const UserManagement: VFC = memo(() => {
               />
             </WrapItem>
           ))}
-          )
         </Wrap>
       )}
       <UserDetailModal

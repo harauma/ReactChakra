@@ -5,5 +5,8 @@ import {
   LoginUserContextType
 } from "../providers/LoginUserProvider";
 
-export const useLoginUser = (): LoginUserContextType =>
-  useContext(LoginUserContext);
+export const useLoginUser = (): LoginUserContextType => {
+  const c = useContext(LoginUserContext);
+  if (!c) throw new Error("useCtx must be inside a Provider with a value");
+  return c;
+};

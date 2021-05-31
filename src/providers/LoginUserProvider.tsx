@@ -15,8 +15,8 @@ export type LoginUserContextType = {
   setLoginUser: Dispatch<SetStateAction<LoginUser | null>>;
 };
 
-export const LoginUserContext = createContext<LoginUserContextType>(
-  {} as LoginUserContextType
+export const LoginUserContext = createContext<LoginUserContextType | undefined>(
+  undefined
 );
 
 export const LoginUserProvider = (props: { children: ReactNode }) => {
